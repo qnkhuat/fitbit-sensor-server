@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Flask	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+abort	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+add	main.py	/^def add():$/;"	f
+app	main.py	/^app = Flask(__name__)$/;"	v
+bad_request	main.py	/^def bad_request(error):$/;"	f
+base64	main.py	/^import base64$/;"	i
+base64	scripts/.ipynb_checkpoints/send-checkpoint.py	/^import base64$/;"	i
+base64	scripts/send.py	/^import base64$/;"	i
+base64	src/.ipynb_checkpoints/utils-checkpoint.py	/^import base64$/;"	i
+base64	src/utils.py	/^import base64$/;"	i
+bytes2array	src/.ipynb_checkpoints/utils-checkpoint.py	/^def bytes2array(data):$/;"	f
+bytes2array	src/utils.py	/^def bytes2array(data):$/;"	f
+create_save_dir	src/.ipynb_checkpoints/utils-checkpoint.py	/^def create_save_dir(root='upload'):$/;"	f
+create_save_dir	src/utils.py	/^def create_save_dir(root='upload'):$/;"	f
+cv2	scripts/.ipynb_checkpoints/send-checkpoint.py	/^import cv2$/;"	i
+cv2	scripts/live_emotion.py	/^import cv2$/;"	i
+cv2	scripts/send.py	/^import cv2$/;"	i
+cv2	src/.ipynb_checkpoints/utils-checkpoint.py	/^import cv2$/;"	i
+cv2	src/utils.py	/^import cv2$/;"	i
+datetime	src/.ipynb_checkpoints/utils-checkpoint.py	/^import datetime$/;"	i
+datetime	src/utils.py	/^import datetime$/;"	i
+emotion	scripts/live_emotion.py	/^    emotion = emotion_detector.predict_array(face)['emotion']$/;"	v
+emotion_detector	scripts/live_emotion.py	/^emotion_detector = load_emotion(model_name='resnet18-fastai')$/;"	v
+encode_payload	src/.ipynb_checkpoints/utils-checkpoint.py	/^def encode_payload(payload):$/;"	f
+face	scripts/live_emotion.py	/^    face = face_detector.find_biggest_face(frame)$/;"	v
+face_detector	scripts/live_emotion.py	/^face_detector = load_face()$/;"	v
+headers	scripts/.ipynb_checkpoints/send-checkpoint.py	/^headers = {'content-type' : 'application\/json'}$/;"	v
+headers	scripts/.ipynb_checkpoints/send-checkpoint.py	/^headers = {'content-type' : 'base64'}$/;"	v
+headers	scripts/send.py	/^headers = {'content-type' : 'application\/json'}$/;"	v
+img_file	scripts/.ipynb_checkpoints/send-checkpoint.py	/^img_file = 'images\/test.png'$/;"	v
+img_file	scripts/send.py	/^img_file = 'images\/test.png'$/;"	v
+json	main.py	/^import json$/;"	i
+json	scripts/.ipynb_checkpoints/send-checkpoint.py	/^import json$/;"	i
+json	scripts/send.py	/^import json$/;"	i
+json	src/.ipynb_checkpoints/utils-checkpoint.py	/^import json$/;"	i
+json	src/utils.py	/^import json$/;"	i
+jsonify	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+load_emotion	scripts/live_emotion.py	/^from src.emotion.models import load_model as load_emotion$/;"	i
+load_face	scripts/live_emotion.py	/^from src.detect_face.inference import load_detection_model as load_face$/;"	i
+logging	main.py	/^import logging$/;"	i
+make_response	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+matplotlib	scripts/live_emotion.py	/^import matplotlib.pyplot as plt$/;"	i
+not_found	main.py	/^def not_found(error):$/;"	f
+np	src/.ipynb_checkpoints/utils-checkpoint.py	/^import numpy as np$/;"	i
+np	src/utils.py	/^import numpy as np$/;"	i
+os	src/.ipynb_checkpoints/utils-checkpoint.py	/^import os$/;"	i
+os	src/utils.py	/^import os$/;"	i
+params	scripts/.ipynb_checkpoints/send-checkpoint.py	/^params = {}$/;"	v
+params	scripts/send.py	/^params = {}$/;"	v
+payload	scripts/.ipynb_checkpoints/send-checkpoint.py	/^    payload= base64.b64encode(image_file.read())$/;"	v
+payload	scripts/send.py	/^    payload = payload.decode('utf-8') # str$/;"	v
+payload	scripts/send.py	/^    payload= base64.b64encode(image_file.read()) # bytes$/;"	v
+plt	scripts/live_emotion.py	/^import matplotlib.pyplot as plt$/;"	i
+random	src/.ipynb_checkpoints/utils-checkpoint.py	/^import random$/;"	i
+random	src/utils.py	/^import random$/;"	i
+redirect	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+request	main.py	/^from flask import Flask, jsonify, make_response, request, abort, redirect$/;"	i
+requests	scripts/.ipynb_checkpoints/send-checkpoint.py	/^import requests$/;"	i
+requests	scripts/send.py	/^import requests$/;"	i
+response	scripts/.ipynb_checkpoints/send-checkpoint.py	/^response = requests.post(url, data=payload, params=params,headers=headers)$/;"	v
+response	scripts/send.py	/^response = requests.post(url, data=json.dumps({'data':payload}), params=params,headers=headers)$/;"	v
+save_image_today	src/.ipynb_checkpoints/utils-checkpoint.py	/^def save_image_today(image,root):$/;"	f
+save_image_today	src/utils.py	/^def save_image_today(image,root):$/;"	f
+start	scripts/.ipynb_checkpoints/send-checkpoint.py	/^start = time.time()$/;"	v
+start	scripts/send.py	/^start = time.time()$/;"	v
+str2array	src/utils.py	/^def str2array(data):$/;"	f
+sys	scripts/live_emotion.py	/^import sys$/;"	i
+time	main.py	/^import time$/;"	i
+time	scripts/.ipynb_checkpoints/send-checkpoint.py	/^import time$/;"	i
+time	scripts/send.py	/^import time$/;"	i
+traceback	main.py	/^import traceback$/;"	i
+url	scripts/.ipynb_checkpoints/send-checkpoint.py	/^url = 'http:\/\/0.0.0.0:8085\/emotion\/analyze'$/;"	v
+url	scripts/send.py	/^url = 'http:\/\/202.134.19.193:8088\/predict'$/;"	v
+vid	scripts/live_emotion.py	/^vid = cv2.VideoCapture(0)$/;"	v

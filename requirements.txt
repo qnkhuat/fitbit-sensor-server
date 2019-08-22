@@ -1,0 +1,5 @@
+opencv-python
+#fastai
+numpy==1.16.1
+pandas
+flask
