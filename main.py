@@ -9,8 +9,10 @@ app = Flask(__name__)
 
 @app.route('/api/json', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def add():
-    data = request.get_json()
-    print(data)
+    data = request.json
+    with open('data.json', 'w') as f : 
+        json.dump(data, f, indent=4)
+
     return jsonify(data)
 
 @app.errorhandler(400)
