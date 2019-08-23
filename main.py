@@ -4,15 +4,19 @@ import base64
 import json
 import time
 import traceback
+import os
 
 app = Flask(__name__)
 
 @app.route('/api/json', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def add():
+    os.makedirs("data/", exist_ok = True)
+    sensor = request.args.get('sensor')
+    time = request.args.get('time')
+    filename = f"data/{sensor}_{time}.json"
     data = request.json
-    with open('data.json', 'w') as f : 
+    with open(filename, 'w') as f : 
         json.dump(data, f, indent=4)
-
     return jsonify(data)
 
 @app.errorhandler(400)
