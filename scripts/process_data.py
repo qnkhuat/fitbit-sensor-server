@@ -12,7 +12,7 @@ print(f"Total files {len(list_files)}")
 total_files = sorted(list_files.str.split('/', expand=True)[2].str.split('.',expand=True)[0].str.split('_',expand=True)[1].astype(int))
 
 # check if continuous
-assert len(total_files) == total_files[-1] +1
+assert len(total_files) == total_files[-1] +1, print(len(total_files), total_files[-1] +1)
 
 data = {}
 list_ts = []
@@ -29,6 +29,7 @@ for fn in list_files:
         
         
 # write data
-os.makedirs(f"../data/processed_data", exist_ok = True)
-with open(f"../data/processed_data/{sensor}.json", 'w') as f:
+output_dir = "../data/processed_data"
+os.makedirs(output_dir, exist_ok = True)
+with open(f"{output_dir}/{sensor}_flat_still.json", 'w') as f:
     json.dump(data, f, indent=4)
