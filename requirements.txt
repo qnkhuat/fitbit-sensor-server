@@ -1,5 +1,5 @@
 opencv-python
 #fastai
-numpy==1.16.1
+numpy==1.22.0
 pandas
 flask
